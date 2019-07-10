@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".semester2"></activity>
+        <activity android:name=".semester8"></activity>
+        <activity android:name=".semester7" />
+        <activity android:name=".semester6" />
+        <activity android:name=".semester5" />
+        <activity android:name=".semester4" />
+        <activity android:name=".semester3" />
+        <activity android:name=".semester2" />
         <activity android:name=".pointTable" />
         <activity android:name=".semester1" />
         <activity android:name=".MainActivity">
