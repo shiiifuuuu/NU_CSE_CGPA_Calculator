@@ -10,7 +10,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="2nd Semester"
         android:textColor="#F44336"
         android:textSize="30sp"
@@ -20,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnDataStructure"
+        android:id="@+id/btnOOP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -40,10 +39,10 @@
         android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDataStructure" />
+        app:layout_constraintTop_toBottomOf="@+id/btnOOP" />
 
     <Button
-        android:id="@+id/btnLabDS"
+        android:id="@+id/btnLabOOP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -65,10 +64,10 @@
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLabDS" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLabOOP" />
 
     <Button
-        android:id="@+id/btnElectric"
+        android:id="@+id/btnOS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -88,10 +87,10 @@
         android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnElectric" />
+        app:layout_constraintTop_toBottomOf="@+id/btnOS" />
 
     <Button
-        android:id="@+id/btnLabEE"
+        android:id="@+id/btnDLD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -99,7 +98,7 @@
         android:onClick="labEEClicked"
         android:text="124"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDataStructure" />
+        app:layout_constraintTop_toBottomOf="@+id/btnOOP" />
 
     <TextView
         android:id="@+id/txtLabEEPoint"
@@ -111,10 +110,10 @@
         android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLabEE" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDLD" />
 
     <Button
-        android:id="@+id/btnCalculus"
+        android:id="@+id/btnDLDLab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -123,7 +122,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLabDS" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLabOOP" />
 
     <TextView
         android:id="@+id/txtCalculusPoint"
@@ -137,10 +136,10 @@
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalculus" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDLDLab" />
 
     <Button
-        android:id="@+id/btnStatistics"
+        android:id="@+id/btnMath"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -148,7 +147,7 @@
         android:onClick="statisticsClicked"
         android:text="126"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnElectric" />
+        app:layout_constraintTop_toBottomOf="@+id/btnOS" />
 
     <TextView
         android:id="@+id/txtStatisticsPoint"
@@ -160,10 +159,10 @@
         android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStatistics" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMath" />
 
     <Button
-        android:id="@+id/btnDiscrete"
+        android:id="@+id/btnEDC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -182,7 +181,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDiscrete" />
+        app:layout_constraintTop_toBottomOf="@+id/btnEDC" />
 
     <Button
         android:id="@+id/btnCalculate"

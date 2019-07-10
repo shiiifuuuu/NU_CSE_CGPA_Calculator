@@ -3,8 +3,10 @@ package com.team.octa.nu_csecgpacalculator;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.TextView;
 
@@ -14,6 +16,8 @@ public class semester1 extends AppCompatActivity {
 
     private TextView txtComputerSystemPoint, txtProgrammingLangPoint, txtLabCPoint, txtPhysicsPoint, txtCalculusPoint, txtEnglishPoint, txtCalculateSemester1;
     private double computerSystemPoint, programmingLangPoint, labCPoint, physicsPoint, calculusPoint, englishPoint;
+    private Vibrator vibrator;
+    private int millisecond;
 
     private final static int computerSystemRequestCode=1;
     private final static int programmingLangRequestCode=2;
@@ -38,41 +42,52 @@ public class semester1 extends AppCompatActivity {
         txtCalculusPoint = findViewById(R.id.txtCalculusPoint);
         txtEnglishPoint = findViewById(R.id.txtEnglishPoint);
         txtCalculateSemester1 = findViewById(R.id.txtResultShow);
+
+        //initializing vibrator service
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        millisecond = 10;
     }
 
 
     //BUTTONS STARTED FROM HERE
     public void computerSystemClicked(View v){
+        vibrator.vibrate(millisecond);
         Intent pointTable = new Intent(semester1.this, pointTable.class);
         startActivityForResult(pointTable, computerSystemRequestCode);
     }
 
     public void programmingLangClicked(View v){
+        vibrator.vibrate(millisecond);
         Intent pointTable = new Intent(semester1.this, pointTable.class);
         startActivityForResult(pointTable, programmingLangRequestCode);
     }
 
     public void labCClicked(View v){
+        vibrator.vibrate(millisecond);
         Intent pointTable = new Intent(semester1.this, pointTable.class);
         startActivityForResult(pointTable, labCRequestCode);
     }
 
     public void physicsClicked(View v){
+        vibrator.vibrate(millisecond);
         Intent pointTable = new Intent(semester1.this, pointTable.class);
         startActivityForResult(pointTable, physicsRequestCode);
     }
 
     public void calculusClicked(View v){
+        vibrator.vibrate(millisecond);
         Intent pointTable = new Intent(semester1.this, pointTable.class);
         startActivityForResult(pointTable, calculusRequestCode);
     }
 
     public void englishClicked(View v){
+        vibrator.vibrate(millisecond);
         Intent pointTable = new Intent(semester1.this, pointTable.class);
         startActivityForResult(pointTable, englishRequestCode);
     }
 
     public void calculateTotal(View view) {
+        vibrator.vibrate(millisecond);
         double total = (computerSystemPoint + programmingLangPoint + labCPoint + physicsPoint + calculusPoint + englishPoint) / 16.5;
         String string = new DecimalFormat("##.###").format(total);
         txtCalculateSemester1.setText(string);

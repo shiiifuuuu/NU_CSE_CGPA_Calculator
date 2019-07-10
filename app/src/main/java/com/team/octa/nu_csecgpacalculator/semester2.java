@@ -3,11 +3,12 @@ package com.team.octa.nu_csecgpacalculator;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.DecimalFormat;
 
@@ -15,6 +16,9 @@ public class semester2 extends AppCompatActivity {
 
     private TextView txtDataStructurePoint, txtLabDSPoint, txtElectricPoint, txtLabEEPoint, txtCalculusPoint, txtStatisticsPoint, txtDiscretePoint, txtResult;
     private double dataStructurePoint, labDSPoint, electricPoint, labEEPoint, calculusPoint, statisticsPoint, discretePoint;
+
+    private Vibrator vibrator;
+    private int millisecond;
 
     private static final int requestCodeDataStructure = 1;
     private static final int requestCodeLabDS = 2;
@@ -41,6 +45,9 @@ public class semester2 extends AppCompatActivity {
         txtStatisticsPoint = findViewById(R.id.txtStatisticsPoint);
         txtDiscretePoint = findViewById(R.id.txtDiscretePoint);
         txtResult = findViewById(R.id.txtResultShow);
+
+        vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        millisecond = 10;
     }
 
     //Method for going to P O I N T   T A B L E intent
@@ -51,35 +58,43 @@ public class semester2 extends AppCompatActivity {
 
     // B U T T O N S
     public void dataStructureClicked(View view) {
+        vibrator.vibrate(millisecond);
         pointTableIntent(requestCodeDataStructure);
     }
 
     public void labDSClicked(View view) {
+        vibrator.vibrate(millisecond);
         pointTableIntent(requestCodeLabDS);
     }
 
     public void electricClicked(View view) {
+        vibrator.vibrate(millisecond);
         pointTableIntent(requestCodeElectric);
     }
 
     public void labEEClicked(View view) {
+        vibrator.vibrate(millisecond);
         pointTableIntent(requestCodeLabEE);
     }
 
     public void calculusClicked(View view) {
+        vibrator.vibrate(millisecond);
         pointTableIntent(requestCodeCalculus);
     }
 
     public void statisticsClicked(View view) {
+        vibrator.vibrate(millisecond);
         pointTableIntent(requestCodeStatistics);
     }
 
     public void discreteClicked(View view) {
+        vibrator.vibrate(millisecond);
         pointTableIntent(requestCodeDiscrete);
     }
 
     //CALCULATING CGPA
     public void calculateTotal(View view) {
+        vibrator.vibrate(millisecond);
         double value = (dataStructurePoint + labDSPoint + electricPoint + labEEPoint + calculusPoint + statisticsPoint + discretePoint)/18.0;
         String string = new DecimalFormat("##.###").format(value);
         txtResult.setText(string);

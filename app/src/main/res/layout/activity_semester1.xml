@@ -116,7 +116,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnPhysics" />
 
     <Button
-        android:id="@+id/btnCalculus"
+        android:id="@+id/btnDLDLab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
@@ -141,7 +141,7 @@
         android:text="0.0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalculus" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDLDLab" />
 
     <Button
         android:id="@+id/btnEnglish"
